@@ -14,7 +14,8 @@
 
 |Release|Version|
 |-------|-------|
-|Release|[![GH_Pre-Release](https://img.shields.io/github/v/release/jlat96/TBCore?include_prereleases)](https://github.com/jlat96/TBCore/releases)|
+|Preview|[![GH_Pre-Release](https://img.shields.io/github/v/release/jlat96/TBCore?include_prereleases)](https://github.com/jlat96/TBCore/releases)|
+|Release|[![GH_Pre-Release](https://img.shields.io/github/v/release/jlat96/TBCore)](https://github.com/jlat96/TBCore/releases)|
 
 ## Introduction
 
