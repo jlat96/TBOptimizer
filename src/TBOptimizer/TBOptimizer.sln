@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TBOptimizer", ".\TBOptimizer\TBOptimizer.csproj", "{6241AB8E-A799-4591-A88F-F7A2F6D248C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TBOptimizerTests", ".\TBOptimizerTests\TBOptimizerTests.csproj", "{039A0161-2E2B-4F1E-8E31-DBA93B9E3423}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6241AB8E-A799-4591-A88F-F7A2F6D248C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6241AB8E-A799-4591-A88F-F7A2F6D248C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6241AB8E-A799-4591-A88F-F7A2F6D248C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6241AB8E-A799-4591-A88F-F7A2F6D248C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{039A0161-2E2B-4F1E-8E31-DBA93B9E3423}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{039A0161-2E2B-4F1E-8E31-DBA93B9E3423}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{039A0161-2E2B-4F1E-8E31-DBA93B9E3423}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{039A0161-2E2B-4F1E-8E31-DBA93B9E3423}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {69E12FCF-AD3A-4BB7-A8FF-6F74A9A63BE3}
+	EndGlobalSection
+EndGlobal
