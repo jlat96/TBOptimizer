@@ -7,7 +7,7 @@
 
 |Development|Release|
 |-|-|
-||![GitHub Workflow Status](https://img.shields.io/github/workflow/status/jlat96/TBOptimizer/Build%20and%20Test%20TBOptimizer)|
+|![GitHub Workflow Status](https://img.shields.io/github/workflow/status/jlat96/TBOptimizer/Build%20and%20Test%20TBOptimizer)|![GitHub Workflow Status](https://img.shields.io/github/workflow/status/jlat96/TBOptimizer/Build%20and%20Test%20TBOptimizer)|
 
 
 ## Releases
