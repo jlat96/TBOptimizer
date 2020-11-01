@@ -2,7 +2,7 @@ name: Build and Test TBOptimizer
 
 on:
   push:
-    branches: [ master, dev ]
+    branches: [ dev ]
 
 jobs:
   build_test:
