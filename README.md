@@ -3,7 +3,7 @@
 ## Status
 
 
-[![GithubIssues](https://img.shields.io/github/issues/jlat96/TBCore)](https://github.com/jlat96/TBCore/issues)
+[![GithubIssues](https://img.shields.io/github/issues/jlat96/TBOptimizer)](https://github.com/jlat96/TBCore/issues)
 
 |Development|Release|
 |-|-|
