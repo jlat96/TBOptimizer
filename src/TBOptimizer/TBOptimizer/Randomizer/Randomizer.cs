@@ -21,7 +21,7 @@ namespace Trailblazer.TBOptimizer.Randomizer
         /// </summary>
         /// <param name="evaluationComparer"></param>
         /// <param name="successorPicker"></param>
-        public StateRandomizer(IComparer<TEvaluation> evaluationComparer, ISuccessorSelector<TState, TEvaluation> successorPicker)
+        public StateRandomizer(IComparer<TState> evaluationComparer, ISuccessorSelector<TState, TEvaluation> successorPicker)
             : this(evaluationComparer, successorPicker, 1) { }
 
         /// <summary>
@@ -32,7 +32,7 @@ namespace Trailblazer.TBOptimizer.Randomizer
         /// <param name="evaluationComparer"></param>
         /// <param name="successorPicker"></param>
         /// <param name="numRandomizations"></param>
-        public StateRandomizer(IComparer<TEvaluation> evaluationComparer, ISuccessorSelector<TState, TEvaluation> successorPicker, int numRandomizations)
+        public StateRandomizer(IComparer<TState> evaluationComparer, ISuccessorSelector<TState, TEvaluation> successorPicker, int numRandomizations)
         {
             SuccessorPicker = successorPicker;
             EvaluationComparer = evaluationComparer;
@@ -40,9 +40,9 @@ namespace Trailblazer.TBOptimizer.Randomizer
         }
 
         /// <summary>
-        /// The <see cref="IComparer{TEvaluation}">Comparer</see> used in state evaluation comparison
+        /// The <see cref="IComparer{TState}">Comparer</see> used in state comparison
         /// </summary>
-        internal IComparer<TEvaluation> EvaluationComparer { get; set; }
+        internal IComparer<TState> EvaluationComparer { get; set; }
 
         /// <summary>
         /// The number of times that the optimizer will attempt to find a more optimal state.
@@ -65,10 +65,10 @@ namespace Trailblazer.TBOptimizer.Randomizer
 
             TState bestState = initialState;
             TState nextState;
-            for (int i = 0; i < NumRandomizations && bestState > initialState; i++) // Test this
+            for (int i = 0; i < NumRandomizations; i++)
             {
                 nextState = SuccessorPicker.Next(bestState);
-                bestState = EvaluationComparer.Compare(bestState.GetEvaluation(), nextState.GetEvaluation()) > 0
+                bestState = EvaluationComparer.Compare(bestState, nextState) > 0
                     ? bestState
                     : nextState;
             }
