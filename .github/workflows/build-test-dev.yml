@@ -1,4 +1,4 @@
-name: Build and Test TBOptimizer
+name: Build and Test TBOptimizer Dev
 
 on:
   push:
