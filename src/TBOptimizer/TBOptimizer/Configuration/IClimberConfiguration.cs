@@ -11,9 +11,6 @@ namespace TrailBlazer.TBOptimizer.Configuration
         where TState : EvaluableState<TEvaluation>
         where TEvaluation : IComparable<TEvaluation>
     {
-        ClimberConfiguration<TState, TEvaluation> ComparesUsing(IComparer<TState> comparisonStrategy);
-        ClimberConfiguration<TState, TEvaluation> GeneratesSuccessorsWith(Func<TState, IEnumerable<TState>> successorGenerationFunction);
-        ClimberConfiguration<TState, TEvaluation> UsingAlgorithm(IClimberAlgorithm<TState, TEvaluation> algorithm);
         IHillClimber<TState, TEvaluation> Build();
     }
 }

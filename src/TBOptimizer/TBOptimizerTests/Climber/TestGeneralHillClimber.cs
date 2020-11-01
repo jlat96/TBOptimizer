@@ -28,7 +28,7 @@ namespace OptimizerTests.Climber
         public void Setup()
         {
             comparer = new MaximizingComparer<TestIntegerEvaluableState>();
-            generator = generator = new TestLinearIntegerSuccessorGenerator();
+            generator = new TestLinearIntegerSuccessorGenerator();
             climber = new ClimberConfiguration<TestIntegerEvaluableState, int>()
                 .ComparesUsing(new MaximizingComparer<TestIntegerEvaluableState>())
                 .GeneratesSuccessorsWith(generator)
